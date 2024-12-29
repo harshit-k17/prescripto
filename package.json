@@ -1,5 +1,5 @@
 {
-
+  "homepage": "https://harshit-k17.github.io/prescripto",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
-
   },
   "dependencies": {
     "axios": "^1.7.9",
